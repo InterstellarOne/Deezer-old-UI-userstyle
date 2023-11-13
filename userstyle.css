@@ -1,428 +1,432 @@
+/* ==UserStyle== 
+
+@name           Tutanota Modern (rewritten)
+@version        0.1.0
+@description    Reverts the UI to match the pre-November 2023 styling.
+@preprocessor   stylus
+
+ -- AUTHOR STUFF --
+@namespace      Interstellar_1
+@author         Interstellar_1
+@homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
+@supportURL     https://github.com/InterstellarOne/Deezer-old-UI-userstyle/issues 
+
+==UserStyle== */
+
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
 div.css-efpag6 {
-  background-color: #f8f8f9;
+    background-color: #f8f8f9;
 }
 
 a.css-1oaqkcs {
-  background-color: #f8f8f9;
+    background-color: #f8f8f9;
 }
 
 div.css-wq839x {
-  background-color: #f8f8f9;
+    background-color: #f8f8f9;
 }
 
 div.chakra-stack.css-10rt0md {
-  background-color: #f8f8f9;
+    background-color: #f8f8f9;
 }
 
 div.css-tzddi9 {
-  background-color: #f8f8f9;
+    background-color: #f8f8f9;
 }
 
 div.page-topbar {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 section.channel-section {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 div.carousel {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 div.nano-card-infos {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 li.WcgM4.nano-card-item.has-shadow {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 div.css-17psu0s {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 div.css-17psu0s:hover {
-  color: #ef5466;
-  background: #f8f8f9;
+    color: #ef5466;
+    background: #f8f8f9;
 }
 
 h2.chakra-heading.css-eg8eqm {
-  font-weight: 700;
-  font-style: normal;
-  font-family: Noto Sans;
-  letter-spacing: -2px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: Noto Sans;
+    letter-spacing: -2px;
 }
 
 h2.chakra-heading.css-ij82ch {
-  font-family: Noto Sans;
+    font-family: Noto Sans;
 }
 
 h2.chakra-heading.css-15h240s {
-  font-family: Noto Sans;
+    font-family: Noto Sans;
 }
 
 span.states-button-label {
-  font-family: Noto Sans;
-  text-transform: uppercase;
+    font-family: Noto Sans;
+    text-transform: uppercase;
 }
 
 div.css-1tznp1b {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 h2.chakra-heading.css-126pubs {
-  font-family: Noto Sans;
+    font-family: Noto Sans;
 }
 
-button.chakra-button.css-1xdm5rr{
-  background: #ef5466;
-  border-radius: 50px;
+button.chakra-button.css-1xdm5rr {
+    background: #ef5466;
+    border-radius: 50px;
 }
 
 button.chakra-button.css-ewld9z {
-  border-style: solid;
-  border-radius: 50px;
-  text-transform: uppercase;
+    border-style: solid;
+    border-radius: 50px;
+    text-transform: uppercase;
 }
 
 button.chakra-button.css-ewld9z:hover {
-  background: #f4f4f4;
+    background: #f4f4f4;
 }
 
 button.chakra-button.css-8cy61 {
-  background: #ffffff;
-  color: #000000;
+    background: #ffffff;
+    color: #000000;
 }
 
 svg.chakra-icon.css-98bzbv {
-  color: #ef5466;
+    color: #ef5466;
 }
 
 button.chakra-button.css-xh7bzy {
-  background: #ef5466;
+    background: #ef5466;
 }
 
 a._ZA0C._MAPk {
-  color: #ef5466;
+    color: #ef5466;
 }
 
 span.NkGZL.pU9nM {
-  color: #ef5466;
+    color: #ef5466;
 }
 
 span.xogtX.oSYze {
-  color: #ef5466;
+    color: #ef5466;
 }
 
 span.uEEZ4.B5yzo {
-  color: #ef5466;
+    color: #ef5466;
 }
 
 span.css-7hpvkw {
-  background: #ef5466;
+    background: #ef5466;
 }
 
 span.chakra-radio__control.css-19k33q3 {
-  border-color: #ef5466;
+    border-color: #ef5466;
 }
 span.chakra-radio__control.css-19k33q3::before {
-  background: #ef5466;
+    background: #ef5466;
 }
 
 span.chakra-switch__track.css-1967ax6 {
-  background: #ef5466;
+    background: #ef5466;
 }
 
 div.j_Ltn {
-  background-color: #f8f8f9;
+    background-color: #f8f8f9;
 }
 
 div.j_Ltn.gU4lg {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 button.KUMiD {
-  background-color: #f8f8f9;
-} 
+    background-color: #f8f8f9;
+}
 
 a.KUMiD {
-  background-color: #f8f8f9;
+    background-color: #f8f8f9;
 }
 
 div.css-1tznp1b {
-  color: #ef5466;
+    color: #ef5466;
 }
 
 button.chakra-button.css-1lmcq5m {
-  border-radius: 50px;
+    border-radius: 50px;
 }
 button.chakra-button.css-1lmcq5m:hover {
-  background: #f4f4f4;
+    background: #f4f4f4;
 }
 
 a.chakra-text.navbar-link.css-93cf35 {
-  border-color: #ef5466;
+    border-color: #ef5466;
 }
 
 span.w_hyY {
-  background: #ef5466;
+    background: #ef5466;
 }
 
 section#chakra-modal-:r6t:.chakra-modal__content.css-2lg8w1 {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 button.chakra-button.css-vhtrvb {
-  background-color: #ef5466;
-  border-radius: 50px;
+    background-color: #ef5466;
+    border-radius: 50px;
 }
 
 input.chakra-input.css-3ti3p2 {
-  background-color: #ffffff;
-  border-style: none;
-  
+    background-color: #ffffff;
+    border-style: none;
 }
 
 button.chakra-button.css-16fcza7 {
-  background-color: #ef5466;
+    background-color: #ef5466;
 }
 
 section.chakra-modal__content.css-2lg8w1 {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 input.chakra-input.css-w29nej {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 a.share-nav-tabs:hover {
-  background: #f4f4f4;
+    background: #f4f4f4;
 }
 
 a.share-nav-tabs.selected {
-  background: #eaeaea;
+    background: #eaeaea;
 }
 
 div.share-nav.clearfix {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 div.share-content.share-followers {
-  background: #f4f4f4;
+    background: #f4f4f4;
 }
 
 textarea.chakra-textarea.css-pirywl {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 div.share-friends-list {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 div.JIYRe.y0aRt.jHMC1:hover {
-  background: #f4f4f4;
+    background: #f4f4f4;
 }
 
 button.chakra-button.css-w1vw9x:hover {
-  background: #f4f4f4;
+    background: #f4f4f4;
 }
 
 h2.chakra-heading.css-ye4a45 {
-  font-weight: 700;
-  font-style: normal;
-  font-family: Noto Sans;
-  letter-spacing: -2px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: Noto Sans;
+    letter-spacing: -2px;
 }
 
 button.chakra-button.css-19mcvxu:hover {
-  background: #eaeaea;
+    background: #eaeaea;
 }
 
 button.chakra-button.action-item-tempo-btn.action-force.css-1owamsh:hover {
-  background: f4f4f4;
+    background: f4f4f4;
 }
 
 button.chakra-button.action-item-tempo-btn.css-13n87n8:hover {
-  background: f4f4f4;
+    background: f4f4f4;
 }
 
 h2.chakra-heading.css-1llceop {
-  font-family: Noto Sans;
+    font-family: Noto Sans;
 }
 
 h2.heading-1.Pbkan {
-  font-family: Noto Sans;
+    font-family: Noto Sans;
 }
 
 div._hESX {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 a.chakra-text.navbar-link.navbar-button.css-ol2ebn {
-  background: #ef5466;
+    background: #ef5466;
 }
 
 svg.chakra-icon.color-primary.css-c1x3e4 {
-  color: #ef5466;
+    color: #ef5466;
 }
 
 input.chakra-input.css-l9l26x {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 div.cCDZT {
-  background: #eaeaea;
+    background: #eaeaea;
 }
 
 button.chakra-button.css-6l5t9l {
-  background: #eaeaea;
-  color: #000000;
-  border-radius: 50px;
+    background: #eaeaea;
+    color: #000000;
+    border-radius: 50px;
 }
 
 button.chakra-button.css-adapyv:hover {
-  background: #f4f4f4;
+    background: #f4f4f4;
 }
 
 div.popper div.popper-content.popper-account.popper-lg {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 h3.chakra-heading.css-1uc385c {
-  font-family: Noto Sans;
-  letter-spacing: -1px;
+    font-family: Noto Sans;
+    letter-spacing: -1px;
 }
 
 h2.chakra-heading.css-19mlmbz {
-  font-family: Noto Sans;
-  letter-spacing: -1px;
+    font-family: Noto Sans;
+    letter-spacing: -1px;
 }
 
 button.chakra-button.css-h5y1tm {
-  background: #ceced3;
-  border: none;
-  border-radius: 50px;
+    background: #ceced3;
+    border: none;
+    border-radius: 50px;
 }
 
 div.chakra-container.css-i1r83f {
-  background: #ffffff;
-  border: none;
+    background: #ffffff;
+    border: none;
 }
 
 input.chakra-input.css-13vbiaq {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 select.chakra-select.css-11zif8a {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 h2.chakra-heading.css-1e9l787 {
-  font-family: Noto Sans;
-  letter-spacing: -1px;
+    font-family: Noto Sans;
+    letter-spacing: -1px;
 }
 
 span.chakra-checkbox__control.css-h7o412[data-checked] {
-  background: #ef5466;
-  border-color: #ef5466;
+    background: #ef5466;
+    border-color: #ef5466;
 }
 
 span.chakra-checkbox__control.css-1x76jzm[data-checked] {
-  background: #ef5466;
-  border-color: #ef5466;
+    background: #ef5466;
+    border-color: #ef5466;
 }
 
 td.social-cell {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 li.css-1csaylv {
-  background: #f6f6f7;
+    background: #f6f6f7;
 }
 
 div.chakra-stack.css-1ttod2l {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 a.css-r8flwv {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 p.chakra-text.css-15jljim {
-  color: #ef5466;
+    color: #ef5466;
 }
 
 span.css-ry808w {
-  background-color: #eaeaea;
-  border-radius: 3px;
+    background-color: #eaeaea;
+    border-radius: 3px;
 }
 
 p.chakra-text.css-1ubekdd {
-  font-weight: 400;
-  font-style: normal;
-  
+    font-weight: 400;
+    font-style: normal;
 }
 
 div.nano-content {
-  background: #f8f8f9;
+    background: #f8f8f9;
 }
 
 h2.chakra-heading.css-n1i2np {
-  font-weight: 700;
-  font-style: normal;
-  font-family: Noto Sans;
-  letter-spacing: -2px;
-  padding-bottom: 20px;
-   
+    font-weight: 700;
+    font-style: normal;
+    font-family: Noto Sans;
+    letter-spacing: -2px;
+    padding-bottom: 20px;
 }
 
 a.search-item:hover {
-  background: #eaeaea;
+    background: #eaeaea;
 }
 
 div.top-content.content-top.content-left {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 div.top-content.content-bottom.content-left.last-release.xsmall {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 div.discography-infos {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 div.album-legal {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 a.ZzbWE.bF9AU.animate-wobble {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 a.account-link:hover {
-  background: #eaeaea;
+    background: #eaeaea;
 }
 
 a.account-header:hover {
-  background: #eaeaea;
-}
-
-svg.chakra-icon.css-c1x3e4 {
-  color: ;
+    background: #eaeaea;
 }
 
 div.JIYRe.jHMC1:hover {
-  background: #eaeaea;
+    background: #eaeaea;
 }
 
 a.chakra-button.css-b2g8lm:hover {
-  background: #f1f1f3;
-}
-
-a.chakra-button.css-b2g8lm {
-  
+    background: #f1f1f3;
 }
