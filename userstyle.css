@@ -318,7 +318,6 @@ h2.chakra-heading.css-1e9l787 {
 }
 
 td.social-cell {
-
   background: var(--tempo-colors-background-neutral-primary-default);
 }
 
@@ -338,4 +337,13 @@ button.chakra-button.css-1lmcq5m:hover {
 
 a.chakra-text.navbar-link.navbar-button.css-ol2ebn:hover {
   background: var(--tempo-colors-background-accent-primary-default);
+}
+
+/* -------------------------------------------------- */
+/* Other                              */
+/* -------------------------------------------------- */
+
+h2.chakra-heading.css-ye4a45 {
+  font-family: Mabry Pro Medium;
+  letter-spacing: -1px;
 }
