@@ -340,3 +340,16 @@ h2.chakra-heading.css-ye4a45 {
     font-family: Mabry Pro Medium;
     letter-spacing: -1px;
 }
+
+/* -------------------------------------------------- */
+/* New Search Bar                                     */
+/* -------------------------------------------------- */
+
+input.chakra-input.css-1hgqfov {
+  border-radius: 30px;
+  background: var(--tempo-colors-background-neutral-primary-default);
+}
+
+input.chakra-input.css-1hgqfov:hover {
+  background: var(--tempo-colors-background-neutral-tertiary-default);
+}
