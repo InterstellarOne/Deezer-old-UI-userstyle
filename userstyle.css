@@ -1,346 +1,447 @@
 /* ==UserStyle== 
 
 @name           Deezer Old UI
-@version        0.2
+@version        0.3.4
 @description    Reverts the UI to match the pre-November 2023 styling.
 @namespace      Interstellar_1
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
 @supportURL     https://github.com/InterstellarOne/Deezer-old-UI-userstyle/issues 
 
 ==/UserStyle== */
-
 @font-face {
-font-family: "Mabry Pro Medium";
-src: url("https://files.catbox.moe/xx2qco.eot");
-src: url("https://files.catbox.moe/um0bo9.woff") format("woff"),
-url("https://files.catbox.moe/dp6o25.ttf") format("truetype"),
-url("https://files.catbox.moe/sb7d08.woff2") format("woff2");
+    font-family: "Mabry Pro Medium";
+    src: url("https://files.catbox.moe/xx2qco.eot");
+    src: url("https://files.catbox.moe/um0bo9.woff") format("woff"),
+    url("https://files.catbox.moe/dp6o25.ttf") format("truetype"),
+    url("https://files.catbox.moe/sb7d08.woff2") format("woff2");
 }
 
 /* -------------------------------------------------- */
 /* Variables                                          */
 /* -------------------------------------------------- */
-
-  :root {
-    --tempo-colors-background-accent-primary-default:  #ef5466 !important;
+:root {
+    --tempo-colors-background-accent-primary-default: #ef5466 !important;
     --tempo-colors-icon-accent-primary-default: #ef5466 !important;
     --tempo-colors-text-accent-primary-default: #ef5466 !important;
     --tempo-colors-accent-main: #ef5466 !important;
     --tempo-colors-border-neutral-primary-focused: #ef5466 !important;
+    --tempo-colors-border-accent-primary-default: #ef5466 !important;
     --tempo-colors-primary-500: #ef5466 !important;
     --tempo-colors-background-brand-acid: #ef5466 !important;
+    --tempo-colors-accent-strong: #e0364a !important;
     --tempo-colors-background-accent-primary-hovered: #e0364a !important;
     --tempo-colors-background-accent-primary-pressed: #e0364a !important;
     --huge-buttons-height: 35px;
-  }
+    --tempo-radii-m: 100px !important;
+    --tempo-fonts-display-m: Mabry Pro Medium !important;
+}
 
-  .naboo {
+.naboo {
     --layout-sidebar-width: 170px !important;
-  }
+}
 
-  .chakra-ui-dark .naboo {
-    --tempo-colors-bg-main: #111 !important;
+.chakra-ui-dark .naboo {
+    --tempo-colors-bg-main: #121216 !important;
     --tempo-colors-divider-main: #2a2a2a !important;
-    
+
 
     --tempo-colors-button-neutral-primary-default: #32323d !important;
+    --tempo-colors-background-neutral-tertiary-hovered: #32323d !important;
+
     --tempo-colors-background-neutral-primary-default: #121216 !important;
     --tempo-colors-border-neutral-primary-default: #32323d !important;
+    --tempo-colors-divider-neutral-primary-default: #32323d !important;
 
     --tempo-colors-background-neutral-tertiary-default: #32323d !important;
-    --tempo-colors-divider-neutral-primary-default: #2a2a2a !important;
-    --tempo-colors-background-neutral-secondary-default: #23232d !important;  
+    --tempo-colors-background-neutral-secondary-default: #23232d !important;
     --background-secondary: #23232d !important;
-      
-    --tempo-colors-bg-contrast: #23232d !important;
-      
-    --searchbar-border: #52525d !important;
-  }
+    --tempo-colors-neutral-strong: #32323d !important;
+    --tempo-colors-bg-contrast: #32323d !important;
 
-  .chakra-ui-light .naboo {
-      
+    --tempo-colors-bg-contrast: #23232d !important;
+
+    --searchbar-border: #52525d !important;
+}
+
+.chakra-ui-light .naboo {
+
     --tempo-colors-bg-main: #fff !important;
-    --tempo-colors-border-neutral-primary-default: #ddd !important;
+    --tempo-colors-border-neutral-primary-default: #eaeaea !important;
+    --tempo-colors-divider-neutral-primary-default: #eaeaea !important;
+    --tempo-colors-bg-secondary: #fff !important;
+    --tempo-colors-background-neutral-primary-hovered: #fff !important;
 
     --tempo-colors-button-neutral-primary-default: #f1f1f1 !important;
+    --tempo-colors-background-neutral-tertiary-hovered: #eaeaea !important;
+    --tempo-colors-neutral-strong: #f1f1f1 !important;
+    --tempo-colors-bg-contrast: #eaeaea !important;
 
     --tempo-colors-background-neutral-tertiary-default: #eaeaea !important;
-    --tempo-colors-background-neutral-secondary-default: #f8f8f9 !important;
+    --tempo-colors-background-neutral-secondary-default: #fff !important;
 
-    --tempo-colors-background-neutral-primary-default: #ffffff !important;   
+    --tempo-colors-background-neutral-primary-default: #ffffff !important;
     --background-secondary: #ffffff !important;
-      
+
+
     --searchbar-border: #b4b4bd !important;
-      
-  }
+}
 
 /* -------------------------------------------------- */
 /* Title                                          */
 /* -------------------------------------------------- */
-
 .chakra-stack.css-10rt0md {
     padding-top: 10px;
     border: none;
-  }
-  .css-1cg9o3l svg {
+}
+.css-1cg9o3l svg {
     display: none
-  }
-  .css-1cg9o3l:after {
+}
+.css-1cg9o3l:after {
     content: 'deezer';
     font-family: "Mabry Pro Medium";
     font-size: 2.2em;
     letter-spacing: -2px;
     font-weight: 700;
     margin-left: 4px;
-  }
-  .css-1cg9o3l:before {
+}
+.css-1cg9o3l:before {
     display: inline-block;
     margin: 0 3px 8px 0;
-      
+
     width: 30px;
     height: 30px;
     content: '';
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Calque_1' inkscape:version='0.92.4 (5da689c313, 2019-01-14)' sodipodi:docname='index.svg' xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1000 191.2' style='enable-background:new 0 0 1000 191.2;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill-rule:evenodd;clip-rule:evenodd;fill:%2340AB5D;%7D .st1%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8192_1_);%7D .st2%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8199_1_);%7D .st3%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8206_1_);%7D .st4%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8213_1_);%7D .st5%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8220_1_);%7D .st6%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8227_1_);%7D .st7%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8234_1_);%7D .st8%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8241_1_);%7D .st9%7Bfill-rule:evenodd;clip-rule:evenodd;fill:url(%23rect8248_1_);%7D%0A%3C/style%3E%3Cg id='g8252' transform='translate(0,86.843818)'%3E%3Cpath id='path8175' inkscape:connector-curvature='0' d='M234.1,40.1c0,40.1,24.7,64.1,61.4,64.1c18.3,0,33.7-5.1,42.3-18.5v18.5 h33.5V-86.8h-34.8v81.2c-7.9-13.4-22.5-19.4-40.8-19.4C259.9-25.1,234.1-0.6,234.1,40.1L234.1,40.1z M337.6,40.1 c0,22.9-15.6,37.2-34.3,37.2c-19.4,0-34.3-14.3-34.3-37.2c0-23.3,15-37.9,34.3-37.9C322,2.2,337.6,17,337.6,40.1z'/%3E%3Cpath id='path8177' inkscape:connector-curvature='0' d='M479.6,54.9c-4,14.8-14.1,22.2-30,22.2c-18.5,0-33.7-11.2-34.1-31h87.7 c1.1-4.9,1.6-10.1,1.6-15.8c0-35.5-24.2-55.5-59.9-55.5c-38.1,0-64.3,27.1-64.3,63.9c0,41,28.9,65.6,68.9,65.6 c30.2,0,50.7-12.6,59.7-37.7L479.6,54.9z M415.5,22.9C418.8,8.6,430.7,0.2,445,0.2c15.6,0,26.2,8.4,26.2,21.6l-0.2,1.1H415.5z'/%3E%3Cpath id='path8179' inkscape:connector-curvature='0' d='M608.7,54.9c-4,14.8-14.1,22.2-30,22.2c-18.5,0-33.7-11.2-34.1-31h87.7 c1.1-4.9,1.6-10.1,1.6-15.8c0-35.5-24.2-55.5-59.9-55.5c-38.1,0-64.3,27.1-64.3,63.9c0,41,28.9,65.6,68.9,65.6 c30.2,0,50.7-12.6,59.7-37.7L608.7,54.9z M544.6,22.9c3.3-14.3,15.2-22.7,29.5-22.7c15.6,0,26.2,8.4,26.2,21.6l-0.2,1.1H544.6z'/%3E%3Cpath id='path8181' inkscape:connector-curvature='0' d='M756.7,104.4V72.9h-73.1l71.1-69.2v-28.8H642.2v30h68.7L640,74.4v30H756.7 z'/%3E%3Cpath id='path8183' inkscape:connector-curvature='0' d='M858.4,54.9c-4,14.8-14.1,22.2-30,22.2c-18.5,0-33.7-11.2-34.1-31H882 c1.1-4.9,1.6-10.1,1.6-15.8c0-35.5-24.2-55.5-59.9-55.5c-38.1,0-64.3,27.1-64.3,63.9c0,41,28.9,65.6,68.9,65.6 c30.2,0,50.7-12.6,59.7-37.7L858.4,54.9z M794.3,22.9c3.3-14.3,15.2-22.7,29.5-22.7c15.6,0,26.2,8.4,26.2,21.6l-0.2,1.1H794.3z'/%3E%3Crect id='rect8185' x='155.5' y='-25.1' class='st0' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8192_1_' gradientUnits='userSpaceOnUse' x1='-111.7225' y1='241.8037' x2='-111.9427' y2='255.8256' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='0' style='stop-color:%23358C7B'/%3E%3Cstop offset='0.5256' style='stop-color:%2333A65E'/%3E%3C/linearGradient%3E%3Crect id='rect8192' x='155.5' y='9.7' class='st1' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8199_1_' gradientUnits='userSpaceOnUse' x1='-123.8913' y1='223.6279' x2='-99.7725' y2='235.9171' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='0' style='stop-color:%23222B90'/%3E%3Cstop offset='1' style='stop-color:%23367B99'/%3E%3C/linearGradient%3E%3Crect id='rect8199' x='155.5' y='44.5' class='st2' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8206_1_' gradientUnits='userSpaceOnUse' x1='-208.4319' y1='210.7725' x2='-185.0319' y2='210.7725' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='0' style='stop-color:%23FF9900'/%3E%3Cstop offset='1' style='stop-color:%23FF8000'/%3E%3C/linearGradient%3E%3Crect id='rect8206' x='0' y='79.3' class='st3' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8213_1_' gradientUnits='userSpaceOnUse' x1='-180.1319' y1='210.7725' x2='-156.7319' y2='210.7725' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='0' style='stop-color:%23FF8000'/%3E%3Cstop offset='1' style='stop-color:%23CC1953'/%3E%3C/linearGradient%3E%3Crect id='rect8213' x='51.8' y='79.3' class='st4' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8220_1_' gradientUnits='userSpaceOnUse' x1='-151.8319' y1='210.7725' x2='-128.4319' y2='210.7725' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='0' style='stop-color:%23CC1953'/%3E%3Cstop offset='1' style='stop-color:%23241284'/%3E%3C/linearGradient%3E%3Crect id='rect8220' x='103.7' y='79.3' class='st5' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8227_1_' gradientUnits='userSpaceOnUse' x1='-123.5596' y1='210.7725' x2='-100.1596' y2='210.7725' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='0' style='stop-color:%23222B90'/%3E%3Cstop offset='1' style='stop-color:%233559A6'/%3E%3C/linearGradient%3E%3Crect id='rect8227' x='155.5' y='79.3' class='st6' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8234_1_' gradientUnits='userSpaceOnUse' x1='-152.7555' y1='226.0811' x2='-127.5083' y2='233.4639' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='0' style='stop-color:%23CC1953'/%3E%3Cstop offset='1' style='stop-color:%23241284'/%3E%3C/linearGradient%3E%3Crect id='rect8234' x='103.7' y='44.5' class='st7' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8241_1_' gradientUnits='userSpaceOnUse' x1='-180.9648' y1='234.3341' x2='-155.899' y2='225.2108' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='2.669841e-03' style='stop-color:%23FFCC00'/%3E%3Cstop offset='0.9999' style='stop-color:%23CE1938'/%3E%3C/linearGradient%3E%3Crect id='rect8241' x='51.8' y='44.5' class='st8' width='42.9' height='25.1'/%3E%3ClinearGradient id='rect8248_1_' gradientUnits='userSpaceOnUse' x1='-178.1651' y1='257.7539' x2='-158.6987' y2='239.791' gradientTransform='matrix(1.8318 0 0 -1.8318 381.8134 477.9528)'%3E%3Cstop offset='2.669841e-03' style='stop-color:%23FFD100'/%3E%3Cstop offset='1' style='stop-color:%23FD5A22'/%3E%3C/linearGradient%3E%3Crect id='rect8248' x='51.8' y='9.7' class='st9' width='42.9' height='25.1'/%3E%3Cpath id='path8250' inkscape:connector-curvature='0' d='M966.1,19.6c0,1.3,0,3.7,0,3.7h33.9c0,0,0-6.4,0-9.9 c0-22.2-13.9-38.3-37.2-38.3c-15,0-25.6,7.3-31.1,19.4v-19.4h-35v129.3h35V21.1c0-13.2,7.1-20.5,18-20.5 C959.7,0.7,966.1,10.1,966.1,19.6z'/%3E%3C/g%3E%3Cscript xmlns=''/%3E%3C/svg%3E");
-background-size: cover;
-  }
+    background-size: cover;
+}
 
 /* -------------------------------------------------- */
 /* Left Sidebar                                          */
 /* -------------------------------------------------- */
 a.css-1oaqkcs:hover {
-  background: transparent;
+    background: transparent;
 }
 
 p.chakra-text.css-100myuv:hover {
-  color: var(--tempo-colors-background-accent-primary-hovered);
+    color: var(--tempo-colors-background-accent-primary-hovered);
 }
 
 a.css-r8flwv {
-  background: var(--tempo-colors-button-neutral-secondary-default);
+    background: var(--tempo-colors-button-neutral-secondary-default);
 }
 
 div.css-1tznp1b {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 div.css-1tznp1b:hover {
-  background: transparent;
+    background: transparent;
 }
 
 div.css-17psu0s {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 div.css-17psu0s:hover {
-  background: transparent;
-  color: var(--tempo-colors-background-accent-primary-hovered);
+    background: transparent;
+    color: var(--tempo-colors-background-accent-primary-hovered);
 }
 
 h2.chakra-heading.css-ij82ch {
-  font-family: Mabry Pro Medium;
-  font-weight: 700;
-  font-style: normal;
+    font-family: Mabry Pro Medium;
+    font-weight: 700;
+    font-style: normal;
 }
 
 h2.chakra-heading.css-15h240s {
-  font-family: Mabry Pro Medium;
-  font-weight: 700;
-  font-style: normal;
+    font-family: Mabry Pro Medium;
+    font-weight: 700;
+    font-style: normal;
 }
 
 a.css-bizdq9:hover {
-  background: var(--tempo-colors-button-neutral-secondary-default);
-  color: var(--tempo-colors-background-accent-primary-hovered);
+    background: var(--tempo-colors-button-neutral-secondary-default);
+    color: var(--tempo-colors-background-accent-primary-hovered);
 }
 
 a.css-1oaqkcs:hover {
-  fill: var(--tempo-colors-background-accent-primary-hovered);
+    fill: var(--tempo-colors-background-accent-primary-hovered);
 }
 
 h2.chakra-heading.css-ij82ch:hover {
-  color: var(--tempo-colors-background-accent-primary-hovered);
+    color: var(--tempo-colors-background-accent-primary-hovered);
 }
 
+a.chakra-link.css-vn13i9:hover {
+    background: transparent;
+    color: var(--tempo-colors-background-accent-primary-hovered)
+}
+
+a.chakra-link.playlist-item.css-4968ln:hover {
+    background: transparent;
+    color: var(--tempo-colors-background-accent-primary-hovered)
+}
+
+a.chakra-link.playlist-item.css-4968ln:focus {
+    background: transparent;
+    color: var(--tempo-colors-background-accent-primary-hovered)
+}
+
+a.chakra-link.playlist-item.css-el4wrv {
+    background: transparent;
+}
+
+div.css-1hnlabp:hover {
+    color: var(--tempo-colors-background-accent-primary-hovered)
+}
 
 /* -------------------------------------------------- */
 /* Homepage                                         */
 /* -------------------------------------------------- */
-
 button.chakra-button.css-ewld9z {
-  text-transform: uppercase;
-  border-radius: 50px;
+    text-transform: uppercase;
+    border-radius: 50px;
 }
 
 button.chakra-button.css-ewld9z:hover {
-  background: var(--tempo-colors-button-neutral-primary-default);
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 li.WcgM4.nano-card-item.has-shadow {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 button.chakra-button.css-adapyv:hover {
-  background: var(--tempo-colors-button-neutral-primary-default);
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 div.naboo-catalog {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 /* -------------------------------------------------- */
 /* Search                                         */
 /* -------------------------------------------------- */
 div.search-container.nano {
-  background: var(--tempo-colors-background-neutral-secondary-default);
+    background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
 a.search-item:hover {
-  background: var(--tempo-colors-button-neutral-primary-default);
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 .page-topbar .topbar-search {
     width: 50%;
 }
 
+.page-topbar {
+    height: 55px;
+}
+
 h2.heading-2 {
-  font-family: Mabry Pro Medium;
-  letter-spacing: -1px;
+    font-family: Mabry Pro Medium;
+    letter-spacing: -1px;
 }
 
 input.chakra-input.css-31h4cy {
-  background: var(--tempo-colors-background-neutral-secondary-default);
-  border-color: var(--searchbar-border);
-  border-width: 1px;
+    background: var(--tempo-colors-background-neutral-secondary-default);
+    border-color: var(--searchbar-border);
+    border-width: 1px;
+}
+
+
+input.chakra-input.css-1cwkiap {
+    background: var(--tempo-colors-bg-main);
+    border-radius: 100px;
+}
+
+input.chakra-input.css-1cwkiap:hover {
+    background: var(--tempo-colors-button-neutral-primary-default);
+    border-radius: 100px;
+}
+
+input.chakra-input.css-1cwkiap:target {
+    border: none;
+    border-radius: 100px;
+    color: var(--tempo-colors-bg-main);
+}
+
+input#topbar-search.chakra-input.css-1cwkiap {
+    border-color: var(--tempo-colors-bg-main);
+}
+
+div#page_naboo_search.page-naboo-search {
+    background: var(--tempo-colors-bg-main);
+}
+
+nav.navbar {
+    box-shadow: none;
+    border-color: var(-tempo-colors-background-neutral-tertiary-default);
 }
 
 /* -------------------------------------------------- */
 /* Artist Page                                         */
 /* -------------------------------------------------- */
 h2.chakra-heading.css-n1i2np {
-  font-family: Droid Sans;
-  letter-spacing: -2px;
-  font-weight: 700;
+    font-family: Droid Sans;
+    letter-spacing: -2px;
+    font-weight: 700;
 }
 
 button.chakra-button.css-1xdm5rr {
-  border-radius: 50px;
-  text-transform: uppercase;
+    border-radius: 50px;
+    text-transform: uppercase;
 }
 
-div.top-content.content-top.content-left {
-  background: var(--tempo-colors-background-neutral-primary-default);
+div.content-left {
+    background-color: var(--tempo-colors-background-neutral-primary-default);
 }
 
 div.top-content.content-bottom.content-left.last-release.default {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 div.discography-infos {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 div.discography-thumbnail {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 input.chakra-input.css-3ti3p2 {
-  background: var(--tempo-colors-background-neutral-secondary-default);
+    background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
 div.JIYRe.y0aRt.jHMC1:hover {
-  background: var(--tempo-colors-background-neutral-tertiary-default);
+    background: var(--tempo-colors-background-neutral-tertiary-default);
 }
 
 div._hESX {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 h2.heading-1.Pbkan {
-  font-family: Mabry Pro Medium;
-  font-weight: 700;
+    font-family: Mabry Pro Medium;
+    font-weight: 700;
 }
 
 h2.chakra-heading.css-126pubs {
-  font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium;
 }
 
 button.chakra-button.css-w1vw9x:hover {
-  background: var(--tempo-colors-button-neutral-primary-default);
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 div.top-content.content-bottom.content-left.last-release.xsmall {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 a.ZzbWE.bF9AU.animate-wobble {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 
 div.JIYRe.jHMC1 {
-  background: var(--tempo-colors-button-neutral-primary-default);
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 button.chakra-button.action-item-tempo-btn.css-13n87n8:hover {
-  background: var(--tempo-colors-button-neutral-primary-default);
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 h2.chakra-heading.css-n1i2np {
-  font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium;
 }
 
 div.discography-infos {
-  background: var(--background-secondary);
+    background: var(--background-secondary);
+}
+
+div.css-dw3k4o:hover {
+    background-color: var(--background-primary)
+}
+
+div.css-dw3k4o:focus {
+    background-color: var(--background-primary)
+}
+
+img.chakra-image.css-b87eug:hover {
+    opacity: 0.7;
+    transition: opacity .20s ease-in-out;
+    -moz-transition: opacity .20s ease-in-out;
+    -webkit-transition: opacity .20s ease-in-out;
+}
+
+button.chakra-button.action-item-tempo-btn.css-8bozei:hover {
+    background: var(--tempo-colors-background-neutral-tertiary-hovered);
+}
+
+button.chakra-button.css-1wshp6h:hover {
+    background: var(--tempo-colors-background-neutral-tertiary-hovered);
+}
+
+button.chakra-button.css-1wshp6h:hover {
+    background: var(--tempo-colors-background-neutral-tertiary-hovered);
+}
+
+span.css-koo5i9 {
+    background: var(--background-primary)
 }
 
 /* -------------------------------------------------- */
 /* Dialouges                                         */
 /* -------------------------------------------------- */
-
 div.j_Ltn {
-  background: var(--tempo-colors-background-neutral-secondary-default);
+    background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
 button.KUMiD {
- background: var(--tempo-colors-background-neutral-secondary-default); 
+    background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
 div.title {
-  font-family: Mabry Pro Medium;
-  letter-spacing: -1px;
+    font-family: Mabry Pro Medium;
+    letter-spacing: -1px;
 }
 
 div.aC0hD.SYVt4 {
-  background: var(--tempo-colors-background-neutral-secondary-default); 
+    background: var(--tempo-colors-background-neutral-secondary-default);
+}
+
+textarea.chakra-textarea.css-6p1z1q {
+    background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
 /* Play / pause button */
-
-  .css-8cy61 {
+.css-8cy61 {
     background-color: transparent;
     scale: 1.5;
-  }
-  .css-8cy61:hover {
+}
+.css-8cy61:hover {
     background-color: transparent;
-  }
-  .chakra-ui-light .css-8cy61 svg {
+}
+
+button.chakra-button.css-h1gi0s {
+    background: transparent;
     filter: invert();
-  }
+}
+
 
 /* Other buttons */
-
- button.chakra-button.css-u9j562:hover {
-  background: var(--tempo-colors-button-neutral-primary-default);
+button.chakra-button.css-u9j562:hover {
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 button.chakra-button.css-19mcvxu:hover {
-  background: var(--tempo-colors-button-neutral-primary-default);
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 /* Checkboxes */
 span.chakra-checkbox__control.css-19if9xy:hover {
-  background: var(--tempo-colors-background-accent-primary-hovered);
+    background: var(--tempo-colors-background-accent-primary-hovered);
 }
 
 
@@ -348,159 +449,174 @@ span.chakra-checkbox__control.css-19if9xy:hover {
 /* Account                                         */
 /* -------------------------------------------------- */
 a.account-header.animate-wobble {
-  background: var(--tempo-colors-background-neutral-secondary-default);
+    background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
 ul.account-menu {
-  background: var(--tempo-colors-background-neutral-secondary-default);
+    background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
 a.account-link:hover {
-  background: var(--tempo-colors-button-neutral-primary-default);
+    background: var(--tempo-colors-button-neutral-primary-default);
 }
 
 div.chakra-container.css-i1r83f {
-  background: var(--tempo-colors-background-neutral-primary-default);
-  border: none;
+    background: var(--tempo-colors-background-neutral-primary-default);
+    border: none;
 }
 
 div.css-0 {
-  border-color: var(--tempo-colors-border-neutral-primary-default);
+    border-color: var(--tempo-colors-border-neutral-primary-default);
 }
 
 div.account-credentials.css-ecw4k6 {
-  border-color: var(--tempo-colors-border-neutral-primary-default);
+    border-color: var(--tempo-colors-border-neutral-primary-default);
 }
 
 div.account-public.css-ecw4k6 {
-  border-color: var(--tempo-colors-border-neutral-primary-default);
+    border-color: var(--tempo-colors-border-neutral-primary-default);
 }
 
 div.account-private.css-ecw4k6 {
-  border-color: var(--tempo-colors-border-neutral-primary-default);
+    border-color: var(--tempo-colors-border-neutral-primary-default);
 }
 
 h3.chakra-heading.css-1uc385c {
-  font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium;
 }
 
 h2.chakra-heading.css-19mlmbz {
-  font-family: Droid Sans;
-  letter-spacing: -1px;
+    font-family: Droid Sans;
+    letter-spacing: -1px;
 }
 
 h2.chakra-heading.css-1e9l787 {
-  font-family: Mabry Pro Medium;
-  letter-spacing: -1px;
+    font-family: Mabry Pro Medium;
+    letter-spacing: -1px;
 }
 
 td.social-cell {
 
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 div.heading-1 {
-  font-family: Mabry Pro Medium;
-  letter-spacing: -1px;
+    font-family: Mabry Pro Medium;
+    letter-spacing: -1px;
 }
 
 h1.heading-1 {
-  font-family: Mabry Pro Medium;
-  letter-spacing: -1px;
+    font-family: Mabry Pro Medium;
+    letter-spacing: -1px;
 }
 
 button.chakra-button.css-1lmcq5m:hover {
-  background: var(--tempo-colors-background-neutral-tertiary-default);
+    background: var(--tempo-colors-background-neutral-tertiary-default);
 }
 
 a.chakra-text.navbar-link.navbar-button.css-ol2ebn:hover {
-  background: var(--tempo-colors-background-accent-primary-default);
+    background: var(--tempo-colors-background-accent-primary-default);
 }
 
 h2.chakra-heading.css-ye4a45 {
-  font-family: Mabry Pro Medium;
-  letter-spacing: -1px;
+    font-family: Mabry Pro Medium;
+    letter-spacing: -1px;
 }
 
 input.chakra-input.css-1hgqfov {
-  border-radius: 30px;
-  background: var(--tempo-colors-background-neutral-primary-default);
-  content: 'Search';
+    border-radius: 30px;
+    background: var(--tempo-colors-background-neutral-primary-default);
+    content: 'Search';
 }
 
 input.chakra-input.css-1hgqfov:hover {
-  background: var(--tempo-colors-background-neutral-tertiary-default);
+    background: var(--tempo-colors-background-neutral-tertiary-default);
 }
 
 input.chakra-input.css-1hgqfov:focus {
-  border-color: var(--tempo-colors-background-neutral-primary-default);
+    border-color: var(--tempo-colors-background-neutral-primary-default);
 }
 
 div.css-bizdq9 {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 div.css-bizdq9:hover {
-  background: var(--tempo-colors-background-neutral-secondary-default);
-  color: var(--tempo-colors-icon-accent-primary-default);
+    background: var(--tempo-colors-background-neutral-secondary-default);
+    color: var(--tempo-colors-icon-accent-primary-default);
 }
 
 a.chakra-text.navbar-link.css-93cf35 {
-  border-color: var(--tempo-colors-icon-accent-primary-default);
+    border-color: var(--tempo-colors-icon-accent-primary-default);
 }
 
 a.chakra-text.navbar-link.css-d7qwgv:hover {
-  border-color: var(--tempo-colors-background-accent-primary-hovered);
+    border-color: var(--tempo-colors-background-accent-primary-hovered);
 }
 
 button.chakra-button.css-xw5h76:hover {
-  background: var(--tempo-colors-background-neutral-tertiary-default);
+    background: var(--tempo-colors-background-neutral-tertiary-default);
 }
 
 ul.OptWm {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 div.css-1riztqe {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 /*social dialouges*/
 div.chakra-modal__body.modal-body.css-se1y6v {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 footer.chakra-modal__footer.css-yift0f {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 section.chakra-modal__content.css-2lg8w1 {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 div.share-content.share-followers {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 div.share-nav.clearfix {
-  background: var(--tempo-colors-background-neutral-primary-default);
+    background: var(--tempo-colors-background-neutral-primary-default);
 }
 
 a.share-nav-tabs.selected {
-  background-color: var(--tempo-colors-background-neutral-tertiary-default);
+    background-color: var(--tempo-colors-background-neutral-tertiary-default);
 }
 
 a.share-nav-tabs.selected:hover {
-  background-color: var(--tempo-colors-background-neutral-tertiary-default);
+    background-color: var(--tempo-colors-background-neutral-tertiary-default);
 }
 
 div.css-1ldm6uz {
-  font-family: Mabry Pro Medium !important;
-  padding-top: -px;
-  margin-top: -10px;
-  
+    font-family: Mabry Pro Medium !important;
+    padding-top: -px;
+    margin-top: -10px;
 }
 
 div.slider-track-active.color-purple {
-  background: var(--tempo-colors-accent-main);
+    background: var(--tempo-colors-accent-main);
+}
+
+section.channel-section {
+    background: var(--tempo-colors-bg-main);
+}
+
+div.channel {
+    background: var(--tempo-colors-bg-main);
+}
+
+div.profile-header-container {
+    box-shadow: none;
+}
+
+div.thumbnail- {
+    display: none;
 }
