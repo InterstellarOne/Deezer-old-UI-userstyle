@@ -1,20 +1,24 @@
 /* ==UserStyle== 
 
 @name           Deezer Old UI
-@version        0.3.4
+@version        0.3.5
 @description    Reverts the UI to match the pre-November 2023 styling.
 @namespace      Interstellar_1
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
 @supportURL     https://github.com/InterstellarOne/Deezer-old-UI-userstyle/issues 
 
 ==/UserStyle== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @font-face {
     font-family: "Mabry Pro Medium";
     src: url("https://files.catbox.moe/xx2qco.eot");
     src: url("https://files.catbox.moe/um0bo9.woff") format("woff"),
     url("https://files.catbox.moe/dp6o25.ttf") format("truetype"),
     url("https://files.catbox.moe/sb7d08.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
 }
+
 
 /* -------------------------------------------------- */
 /* Variables                                          */
@@ -33,7 +37,7 @@
     --tempo-colors-background-accent-primary-pressed: #e0364a !important;
     --huge-buttons-height: 35px;
     --tempo-radii-m: 100px !important;
-    --tempo-fonts-display-m: Mabry Pro Medium !important;
+    --tempo-fonts-display-m: Mabry Pro Medium, Montserrat, Trebuchet MS !important;
 }
 
 .naboo {
@@ -98,7 +102,7 @@
 }
 .css-1cg9o3l:after {
     content: 'deezer';
-    font-family: "Mabry Pro Medium";
+    font-family: "Mabry Pro Medium, Montserrat, Trebuchet MS";
     font-size: 2.2em;
     letter-spacing: -2px;
     font-weight: 700;
@@ -149,13 +153,13 @@ div.css-17psu0s:hover {
 }
 
 h2.chakra-heading.css-ij82ch {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     font-weight: 700;
     font-style: normal;
 }
 
 h2.chakra-heading.css-15h240s {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     font-weight: 700;
     font-style: normal;
 }
@@ -240,7 +244,7 @@ a.search-item:hover {
 }
 
 h2.heading-2 {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     letter-spacing: -1px;
 }
 
@@ -323,12 +327,12 @@ div._hESX {
 }
 
 h2.heading-1.Pbkan {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     font-weight: 700;
 }
 
 h2.chakra-heading.css-126pubs {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
 }
 
 button.chakra-button.css-w1vw9x:hover {
@@ -353,7 +357,7 @@ button.chakra-button.action-item-tempo-btn.css-13n87n8:hover {
 }
 
 h2.chakra-heading.css-n1i2np {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
 }
 
 div.discography-infos {
@@ -403,7 +407,7 @@ button.KUMiD {
 }
 
 div.title {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     letter-spacing: -1px;
 }
 
@@ -482,7 +486,7 @@ div.account-private.css-ecw4k6 {
 }
 
 h3.chakra-heading.css-1uc385c {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
 }
 
 h2.chakra-heading.css-19mlmbz {
@@ -491,7 +495,7 @@ h2.chakra-heading.css-19mlmbz {
 }
 
 h2.chakra-heading.css-1e9l787 {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     letter-spacing: -1px;
 }
 
@@ -501,12 +505,12 @@ td.social-cell {
 }
 
 div.heading-1 {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     letter-spacing: -1px;
 }
 
 h1.heading-1 {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     letter-spacing: -1px;
 }
 
@@ -519,7 +523,7 @@ a.chakra-text.navbar-link.navbar-button.css-ol2ebn:hover {
 }
 
 h2.chakra-heading.css-ye4a45 {
-    font-family: Mabry Pro Medium;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS;
     letter-spacing: -1px;
 }
 
@@ -596,7 +600,7 @@ a.share-nav-tabs.selected:hover {
 }
 
 div.css-1ldm6uz {
-    font-family: Mabry Pro Medium !important;
+    font-family: Mabry Pro Medium, Montserrat, Trebuchet MS !important;
     padding-top: -px;
     margin-top: -10px;
 }
