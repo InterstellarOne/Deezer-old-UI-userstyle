@@ -1,7 +1,7 @@
 /* ==UserStyle== 
 
 @name           Deezer Old UI
-@version        0.3.4
+@version        0.4.0
 @description    Reverts the UI to match the pre-November 2023 styling.
 @namespace      Interstellar_1
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -119,13 +119,6 @@
 /* -------------------------------------------------- */
 /* Left Sidebar                                          */
 /* -------------------------------------------------- */
-a.css-1oaqkcs:hover {
-    background: transparent;
-}
-
-p.chakra-text.css-100myuv:hover {
-    color: var(--tempo-colors-background-accent-primary-hovered);
-}
 
 a.css-r8flwv {
     background: var(--tempo-colors-button-neutral-secondary-default);
@@ -135,7 +128,7 @@ div.css-1tznp1b {
     margin-bottom: 10px;
 }
 
-div.css-1tznp1b:hover {
+div.css-1tznp1b:hover, a.chakra-link.playlist-item.css-el4wrv, a.css-1oaqkcs:hover  {
     background: transparent;
 }
 
@@ -143,18 +136,7 @@ div.css-17psu0s {
     margin-bottom: 10px;
 }
 
-div.css-17psu0s:hover {
-    background: transparent;
-    color: var(--tempo-colors-background-accent-primary-hovered);
-}
-
-h2.chakra-heading.css-ij82ch {
-    font-family: Mabry Pro Medium;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h2.chakra-heading.css-15h240s {
+h2.chakra-heading.css-ij82ch, h2.chakra-heading.css-15h240s  {
     font-family: Mabry Pro Medium;
     font-weight: 700;
     font-style: normal;
@@ -169,31 +151,17 @@ a.css-1oaqkcs:hover {
     fill: var(--tempo-colors-background-accent-primary-hovered);
 }
 
-h2.chakra-heading.css-ij82ch:hover {
+h2.chakra-heading.css-ij82ch:hover, div.css-1hnlabp:hover {
     color: var(--tempo-colors-background-accent-primary-hovered);
 }
 
-a.chakra-link.css-vn13i9:hover {
+a.chakra-link.css-vn13i9:hover, a.chakra-link.playlist-item.css-4968ln:hover, a.chakra-link.playlist-item.css-4968ln:focus, div.css-17psu0s:hover, p.chakra-text.css-100myuv:hover {
     background: transparent;
     color: var(--tempo-colors-background-accent-primary-hovered)
 }
 
-a.chakra-link.playlist-item.css-4968ln:hover {
-    background: transparent;
-    color: var(--tempo-colors-background-accent-primary-hovered)
-}
-
-a.chakra-link.playlist-item.css-4968ln:focus {
-    background: transparent;
-    color: var(--tempo-colors-background-accent-primary-hovered)
-}
-
-a.chakra-link.playlist-item.css-el4wrv {
-    background: transparent;
-}
-
-div.css-1hnlabp:hover {
-    color: var(--tempo-colors-background-accent-primary-hovered)
+.css-1xw9pgz {
+    outline-color: transparent
 }
 
 /* -------------------------------------------------- */
@@ -204,19 +172,11 @@ button.chakra-button.css-ewld9z {
     border-radius: 50px;
 }
 
-button.chakra-button.css-ewld9z:hover {
+button.chakra-button.css-ewld9z:hover, button.chakra-button.css-adapyv:hover {
     background: var(--tempo-colors-button-neutral-primary-default);
 }
 
-li.WcgM4.nano-card-item.has-shadow {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-button.chakra-button.css-adapyv:hover {
-    background: var(--tempo-colors-button-neutral-primary-default);
-}
-
-div.naboo-catalog {
+li.WcgM4.nano-card-item.has-shadow, div.naboo-catalog {
     background: var(--tempo-colors-background-neutral-primary-default);
 }
 
@@ -289,6 +249,15 @@ h2.chakra-heading.css-n1i2np {
     font-weight: 700;
 }
 
+h2.heading-1.Pbkan {
+    font-family: Mabry Pro Medium;
+    font-weight: 700;
+}
+
+h2.chakra-heading.css-126pubs, h2.chakra-heading.css-n1i2np {
+    font-family: Mabry Pro Medium;
+}
+
 button.chakra-button.css-1xdm5rr {
     border-radius: 50px;
     text-transform: uppercase;
@@ -298,15 +267,7 @@ div.content-left {
     background-color: var(--tempo-colors-background-neutral-primary-default);
 }
 
-div.top-content.content-bottom.content-left.last-release.default {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-div.discography-infos {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-div.discography-thumbnail {
+div.top-content.content-bottom.content-left.last-release.default, div.discography-infos, div.discography-thumbnail, div._hESX, div.top-content.content-bottom.content-left.last-release.xsmall, a.ZzbWE.bF9AU.animate-wobble {
     background: var(--tempo-colors-background-neutral-primary-default);
 }
 
@@ -318,33 +279,7 @@ div.JIYRe.y0aRt.jHMC1:hover {
     background: var(--tempo-colors-background-neutral-tertiary-default);
 }
 
-div._hESX {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-h2.heading-1.Pbkan {
-    font-family: Mabry Pro Medium;
-    font-weight: 700;
-}
-
-h2.chakra-heading.css-126pubs {
-    font-family: Mabry Pro Medium;
-}
-
-button.chakra-button.css-w1vw9x:hover {
-    background: var(--tempo-colors-button-neutral-primary-default);
-}
-
-div.top-content.content-bottom.content-left.last-release.xsmall {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-a.ZzbWE.bF9AU.animate-wobble {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-
-div.JIYRe.jHMC1 {
+button.chakra-button.css-w1vw9x:hover, div.JIYRe.jHMC1 {
     background: var(--tempo-colors-button-neutral-primary-default);
 }
 
@@ -352,19 +287,11 @@ button.chakra-button.action-item-tempo-btn.css-13n87n8:hover {
     background: var(--tempo-colors-button-neutral-primary-default);
 }
 
-h2.chakra-heading.css-n1i2np {
-    font-family: Mabry Pro Medium;
-}
-
 div.discography-infos {
     background: var(--background-secondary);
 }
 
-div.css-dw3k4o:hover {
-    background-color: var(--background-primary)
-}
-
-div.css-dw3k4o:focus {
+div.css-dw3k4o:hover, div.css-dw3k4o:focus {
     background-color: var(--background-primary)
 }
 
@@ -375,15 +302,7 @@ img.chakra-image.css-b87eug:hover {
     -webkit-transition: opacity .20s ease-in-out;
 }
 
-button.chakra-button.action-item-tempo-btn.css-8bozei:hover {
-    background: var(--tempo-colors-background-neutral-tertiary-hovered);
-}
-
-button.chakra-button.css-1wshp6h:hover {
-    background: var(--tempo-colors-background-neutral-tertiary-hovered);
-}
-
-button.chakra-button.css-1wshp6h:hover {
+button.chakra-button.action-item-tempo-btn.css-8bozei:hover, button.chakra-button.css-1wshp6h:hover, button.chakra-button.css-1wshp6h:hover {
     background: var(--tempo-colors-background-neutral-tertiary-hovered);
 }
 
@@ -391,27 +310,21 @@ span.css-koo5i9 {
     background: var(--background-primary)
 }
 
+.GryKF {
+width: 192px;
+height: 192px;
+}
+
 /* -------------------------------------------------- */
 /* Dialouges                                         */
 /* -------------------------------------------------- */
-div.j_Ltn {
-    background: var(--tempo-colors-background-neutral-secondary-default);
-}
-
-button.KUMiD {
-    background: var(--tempo-colors-background-neutral-secondary-default);
-}
 
 div.title {
     font-family: Mabry Pro Medium;
     letter-spacing: -1px;
 }
 
-div.aC0hD.SYVt4 {
-    background: var(--tempo-colors-background-neutral-secondary-default);
-}
-
-textarea.chakra-textarea.css-6p1z1q {
+div.j_Ltn, button.KUMiD, div.aC0hD.SYVt4, textarea.chakra-textarea.css-6p1z1q {
     background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
@@ -431,11 +344,7 @@ button.chakra-button.css-h1gi0s {
 
 
 /* Other buttons */
-button.chakra-button.css-u9j562:hover {
-    background: var(--tempo-colors-button-neutral-primary-default);
-}
-
-button.chakra-button.css-19mcvxu:hover {
+button.chakra-button.css-u9j562:hover, button.chakra-button.css-19mcvxu:hover {
     background: var(--tempo-colors-button-neutral-primary-default);
 }
 
@@ -444,15 +353,25 @@ span.chakra-checkbox__control.css-19if9xy:hover {
     background: var(--tempo-colors-background-accent-primary-hovered);
 }
 
-
 /* -------------------------------------------------- */
 /* Account                                         */
 /* -------------------------------------------------- */
-a.account-header.animate-wobble {
-    background: var(--tempo-colors-background-neutral-secondary-default);
+
+h3.chakra-heading.css-1uc385c {
+    font-family: Mabry Pro Medium;
 }
 
-ul.account-menu {
+h2.chakra-heading.css-19mlmbz {
+    font-family: Droid Sans;
+    letter-spacing: -1px;
+}
+
+h2.chakra-heading.css-1e9l787, div.heading-1, h1.heading-1, h2.chakra-heading.css-ye4a45  {
+    font-family: Mabry Pro Medium;
+    letter-spacing: -1px;
+}
+
+a.account-header.animate-wobble, ul.account-menu  {
     background: var(--tempo-colors-background-neutral-secondary-default);
 }
 
@@ -465,49 +384,12 @@ div.chakra-container.css-i1r83f {
     border: none;
 }
 
-div.css-0 {
+div.css-0, div.account-credentials.css-ecw4k6, div.account-public.css-ecw4k6, div.account-private.css-ecw4k6 {
     border-color: var(--tempo-colors-border-neutral-primary-default);
-}
-
-div.account-credentials.css-ecw4k6 {
-    border-color: var(--tempo-colors-border-neutral-primary-default);
-}
-
-div.account-public.css-ecw4k6 {
-    border-color: var(--tempo-colors-border-neutral-primary-default);
-}
-
-div.account-private.css-ecw4k6 {
-    border-color: var(--tempo-colors-border-neutral-primary-default);
-}
-
-h3.chakra-heading.css-1uc385c {
-    font-family: Mabry Pro Medium;
-}
-
-h2.chakra-heading.css-19mlmbz {
-    font-family: Droid Sans;
-    letter-spacing: -1px;
-}
-
-h2.chakra-heading.css-1e9l787 {
-    font-family: Mabry Pro Medium;
-    letter-spacing: -1px;
 }
 
 td.social-cell {
-
     background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-div.heading-1 {
-    font-family: Mabry Pro Medium;
-    letter-spacing: -1px;
-}
-
-h1.heading-1 {
-    font-family: Mabry Pro Medium;
-    letter-spacing: -1px;
 }
 
 button.chakra-button.css-1lmcq5m:hover {
@@ -518,18 +400,13 @@ a.chakra-text.navbar-link.navbar-button.css-ol2ebn:hover {
     background: var(--tempo-colors-background-accent-primary-default);
 }
 
-h2.chakra-heading.css-ye4a45 {
-    font-family: Mabry Pro Medium;
-    letter-spacing: -1px;
-}
-
 input.chakra-input.css-1hgqfov {
     border-radius: 30px;
     background: var(--tempo-colors-background-neutral-primary-default);
     content: 'Search';
 }
 
-input.chakra-input.css-1hgqfov:hover {
+input.chakra-input.css-1hgqfov:hover, button.chakra-button.css-xw5h76:hover {
     background: var(--tempo-colors-background-neutral-tertiary-default);
 }
 
@@ -537,7 +414,7 @@ input.chakra-input.css-1hgqfov:focus {
     border-color: var(--tempo-colors-background-neutral-primary-default);
 }
 
-div.css-bizdq9 {
+div.css-bizdq9, div.css-1riztqe {
     padding-bottom: 20px;
 }
 
@@ -554,46 +431,11 @@ a.chakra-text.navbar-link.css-d7qwgv:hover {
     border-color: var(--tempo-colors-background-accent-primary-hovered);
 }
 
-button.chakra-button.css-xw5h76:hover {
-    background: var(--tempo-colors-background-neutral-tertiary-default);
-}
-
 ul.OptWm {
     visibility: hidden;
 }
 
-div.css-1riztqe {
-    padding-bottom: 20px;
-}
-
 /*social dialouges*/
-div.chakra-modal__body.modal-body.css-se1y6v {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-footer.chakra-modal__footer.css-yift0f {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-section.chakra-modal__content.css-2lg8w1 {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-div.share-content.share-followers {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-div.share-nav.clearfix {
-    background: var(--tempo-colors-background-neutral-primary-default);
-}
-
-a.share-nav-tabs.selected {
-    background-color: var(--tempo-colors-background-neutral-tertiary-default);
-}
-
-a.share-nav-tabs.selected:hover {
-    background-color: var(--tempo-colors-background-neutral-tertiary-default);
-}
 
 div.css-1ldm6uz {
     font-family: Mabry Pro Medium !important;
@@ -601,15 +443,19 @@ div.css-1ldm6uz {
     margin-top: -10px;
 }
 
+div.chakra-modal__body.modal-body.css-se1y6v, footer.chakra-modal__footer.css-yift0f, section.chakra-modal__content.css-2lg8w1, div.share-content.share-followers, div.share-nav.clearfix {
+    background: var(--tempo-colors-background-neutral-primary-default);
+}
+
+a.share-nav-tabs.selected, a.share-nav-tabs.selected:hover {
+    background-color: var(--tempo-colors-background-neutral-tertiary-default);
+}
+
 div.slider-track-active.color-purple {
     background: var(--tempo-colors-accent-main);
 }
 
-section.channel-section {
-    background: var(--tempo-colors-bg-main);
-}
-
-div.channel {
+section.channel-section, div.channel, .naboo {
     background: var(--tempo-colors-bg-main);
 }
 
@@ -620,3 +466,4 @@ div.profile-header-container {
 div.thumbnail- {
     display: none;
 }
+
