@@ -1,7 +1,7 @@
 /* ==UserStyle== 
 
 @name           Deezer Old UI
-@version        0.4.3
+@version        0.4.4
 @description    Reverts the UI to match the pre-November 2023 styling.
 @namespace      Interstellar_1
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -47,6 +47,7 @@
 
 
     --tempo-colors-button-neutral-primary-default: #32323d !important;
+    --tempo-colors-background-neutral-secondary-hovered: #32323d !important;
     --tempo-colors-background-neutral-tertiary-hovered: #32323d !important;
 
     --tempo-colors-background-neutral-primary-default: #121216 !important;
@@ -75,6 +76,7 @@
     --tempo-colors-background-neutral-primary-hovered: #fff !important;
 
     --tempo-colors-button-neutral-primary-default: #f1f1f1 !important;
+    --tempo-colors-background-neutral-secondary-hovered: #eaeaea !important;
     --tempo-colors-background-neutral-tertiary-hovered: #eaeaea !important;
     --tempo-colors-neutral-strong: #f1f1f1 !important;
     --tempo-colors-bg-contrast: #eaeaea !important;
@@ -174,11 +176,15 @@ p.chakra-text.css-100myuv:hover {
     outline-color: transparent
 }
 
-a.css-zwm27y,.css-nvjjcu, .css-y3qmmq, a.css-vn13i9{
+a.css-zwm27y,
+.css-nvjjcu,
+.css-y3qmmq,
+a.css-vn13i9 {
     background: white
 }
 
-a.css-zwm27y:hover,.css-nvjjcu:hover{
+a.css-zwm27y:hover,
+.css-nvjjcu:hover {
     background: white
 }
 
