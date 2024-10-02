@@ -1,3 +1,11 @@
+/* ==UserStyle==
+@name         deezer.com
+@version      20240816.00.36
+@namespace    https://userstyles.world/user/InterstellarOne
+@description  Reverts the UI to match the pre-November 2023 styling.
+@author       InterstellarOne
+@license      GNU GPLv3
+==/UserStyle== */
 @-moz-document domain("deezer.com") {
     /* ==UserStyle== 
 
@@ -357,6 +365,10 @@
     .GryKF {
         width: 192px;
         height: 192px;
+    }
+
+    div.css-zylffk:last-of-type {
+        padding-bottom: 64px;
     }
 
     /* -------------------------------------------------- */
