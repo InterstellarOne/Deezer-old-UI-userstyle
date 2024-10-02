@@ -1,16 +1,7 @@
-/* ==UserStyle==
-@name         deezer.com
-@version      20240816.00.36
-@namespace    https://userstyles.world/user/InterstellarOne
-@description  Reverts the UI to match the pre-November 2023 styling.
-@author       InterstellarOne
-@license      GNU GPLv3
-==/UserStyle== */
-@-moz-document domain("deezer.com") {
-    /* ==UserStyle== 
+/* ==UserStyle== 
 
 @name           Deezer Old UI
-@version        0.4.5
+@version        0.4.6
 @description    Reverts the UI to match the pre-November 2023 styling.
 @namespace      Interstellar_1
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -367,7 +358,8 @@
         height: 192px;
     }
 
-    div.css-zylffk:last-of-type {
+    div.css-zylffk:last-of-type,
+    .css-79io3r:last-of-type {
         padding-bottom: 64px;
     }
 
@@ -383,6 +375,8 @@
     .css-awxybl {
         display: none;
     }
+
+
 
     /*remove the following section if you want games on the playlist page*/
     .css-1sqxhci {
@@ -557,4 +551,3 @@
     div.thumbnail- {
         display: none;
     }
-}
