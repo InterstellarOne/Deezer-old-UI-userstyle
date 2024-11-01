@@ -1,7 +1,16 @@
-/* ==UserStyle== 
+/* ==UserStyle==
+@name         deezer.com
+@version      20240816.00.36
+@namespace    https://userstyles.world/user/InterstellarOne
+@description  Reverts the UI to match the pre-November 2023 styling.
+@author       InterstellarOne
+@license      GNU GPLv3
+==/UserStyle== */
+@-moz-document domain("deezer.com") {
+    /* ==UserStyle== 
 
 @name           Deezer Old UI
-@version        0.4.6
+@version        0.6.0
 @description    Reverts the UI to match the pre-November 2023 styling.
 @namespace      Interstellar_1
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -105,10 +114,10 @@
         margin-top: -10px;
     }
 
-    .css-1cg9o3l svg {
+    .css-y0o77f svg {
         display: none
     }
-    .css-1cg9o3l:after {
+    .css-y0o77f:after {
         content: 'deezer';
         font-family: "Mabry Pro Medium";
         font-size: 2.2em;
@@ -116,7 +125,7 @@
         font-weight: 700;
         margin-left: 4px;
     }
-    .css-1cg9o3l:before {
+    .css-y0o77f:before {
         display: inline-block;
         margin: 0 3px 8px 0;
 
@@ -156,7 +165,7 @@
         font-style: normal;
     }
 
-    a.css-bizdq9:hover {
+    a.css-1cpenid:hover {
         background: var(--tempo-colors-button-neutral-secondary-default);
         color: var(--tempo-colors-background-accent-primary-hovered);
     }
@@ -170,29 +179,30 @@
         color: var(--tempo-colors-background-accent-primary-hovered);
     }
 
-    a.chakra-link.css-vn13i9:hover,
-    a.chakra-link.playlist-item.css-4968ln:hover,
-    a.chakra-link.playlist-item.css-4968ln:focus,
-    div.css-17psu0s:hover,
-    p.chakra-text.css-100myuv:hover {
-        background: transparent;
-        color: var(--tempo-colors-background-accent-primary-hovered)
+    a.css-15tld0e:hover {
+        background: none;
+    }
+
+    a.css-10akctc:hover {
+        color: var(--tempo-colors-background-accent-primary-hovered);
     }
 
     .css-1xw9pgz {
-        outline-color: transparent
+        outline-color: transparent;
     }
 
     a.css-zwm27y,
     .css-nvjjcu,
     .css-y3qmmq,
     a.css-vn13i9 {
-        background: white
+        background: var(--tempo-colors-background-neutral-primary-default);
     }
 
     a.css-zwm27y:hover,
-    .css-nvjjcu:hover {
-        background: white
+    .css-nvjjcu:hover,
+    .css-6rbevi,
+    a.chakra-link.playlist-item.css-rfg9h {
+        background: var(--tempo-colors-background-neutral-secondary-default);
     }
 
     /* -------------------------------------------------- */
@@ -216,11 +226,7 @@
     /* -------------------------------------------------- */
     /* Search                                         */
     /* -------------------------------------------------- */
-    div.search-container.nano {
-        background: var(--tempo-colors-background-neutral-secondary-default);
-    }
-
-    a.search-item:hover {
+    #topbar-search:hover {
         background: var(--tempo-colors-button-neutral-primary-default);
     }
 
@@ -244,9 +250,10 @@
     }
 
 
-    input.chakra-input.css-1cwkiap {
+    #topbar-search {
         background: var(--tempo-colors-bg-main);
         border-radius: 100px;
+        border: none;
     }
 
     input.chakra-input.css-1cwkiap:hover {
@@ -349,10 +356,6 @@
         background: var(--tempo-colors-background-neutral-tertiary-hovered);
     }
 
-    span.css-koo5i9 {
-        background: var(--background-primary)
-    }
-
     .GryKF {
         width: 192px;
         height: 192px;
@@ -399,17 +402,14 @@
     }
 
     /* Play / pause button */
-    .css-8cy61 {
-        background-color: transparent;
-        scale: 1.5;
-    }
-    .css-8cy61:hover {
-        background-color: transparent;
+    .css-1u9aiqn:hover {
+        background-color: var(--tempo-colors-background-neutral-secondary-hovered);
+        color: var(--tempo-colors-text-neutral-primary-default)
     }
 
-    button.chakra-button.css-h1gi0s {
+    .css-1u9aiqn {
         background: transparent;
-        filter: invert();
+        color: var(--tempo-colors-text-neutral-primary-default);
     }
 
 
@@ -422,6 +422,13 @@
     /* Checkboxes */
     span.chakra-checkbox__control.css-19if9xy:hover {
         background: var(--tempo-colors-background-accent-primary-hovered);
+    }
+
+    /* Explicit */
+    span.css-koo5i9 {
+        background: var(--background-primary);
+        border: 1px solid var(--tempo-colors-border-neutral-primary-default);
+        border-radius: 5px;
     }
 
     /* -------------------------------------------------- */
@@ -517,7 +524,7 @@
     /*social dialouges*/
     div.css-1ldm6uz {
         font-family: Mabry Pro Medium !important;
-        padding-top: -px;
+        padding-top: 0px;
         margin-top: -10px;
     }
 
@@ -551,3 +558,4 @@
     div.thumbnail- {
         display: none;
     }
+}
