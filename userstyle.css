@@ -10,7 +10,7 @@
     /* ==UserStyle== 
 
 @name           Deezer Old UI
-@version        0.6.0
+@version        0.6.2
 @description    Reverts the UI to match the pre-November 2023 styling.
 @namespace      Interstellar_1
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -175,16 +175,14 @@
     }
 
     h2.chakra-heading.css-ij82ch:hover,
-    div.css-1hnlabp:hover {
+    div.css-1hnlabp:hover,
+    a.css-10akctc:hover,
+    a.chakra-link.playlist-item.css-15tld0e:hover p.chakra-text.css-1ta1aea {
         color: var(--tempo-colors-background-accent-primary-hovered);
     }
 
     a.css-15tld0e:hover {
         background: none;
-    }
-
-    a.css-10akctc:hover {
-        color: var(--tempo-colors-background-accent-primary-hovered);
     }
 
     .css-1xw9pgz {
@@ -382,7 +380,8 @@
 
 
     /*remove the following section if you want games on the playlist page*/
-    .css-1sqxhci {
+    .css-1sqxhci,
+    .css-1y3z0z {
         display: none;
     }
 
