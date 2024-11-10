@@ -1,18 +1,10 @@
-/* ==UserStyle==
-@name           Deezer Old UI
-@version        0.6.2
-@namespace    https://userstyles.world/user/InterstellarOne
-@description  Reverts the UI to match the pre-November 2023 styling.
-@author       InterstellarOne
-@license      GNU GPLv3
-==/UserStyle== */
 @-moz-document domain("deezer.com") {
     /* ==UserStyle== 
-
+@namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.6.2
+@version        0.6.4
 @description    Reverts the UI to match the pre-November 2023 styling.
-@namespace      Interstellar_1
+@author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
 @supportURL     https://github.com/InterstellarOne/Deezer-old-UI-userstyle/issues 
 
@@ -165,11 +157,16 @@
         font-style: normal;
     }
 
-    a.css-1cpenid:hover {
+    a.css-cgmlmq:hover, a.chakra-link.css-1x3dqo7 {
         background: var(--tempo-colors-button-neutral-secondary-default);
         color: var(--tempo-colors-background-accent-primary-hovered);
+        border-color:transparent;
     }
 
+    a.css-cgmlmq {
+        border-color:transparent;
+    }
+    
     a.css-1oaqkcs:hover {
         fill: var(--tempo-colors-background-accent-primary-hovered);
     }
@@ -177,11 +174,11 @@
     h2.chakra-heading.css-ij82ch:hover,
     div.css-1hnlabp:hover,
     a.css-10akctc:hover,
-    a.chakra-link.playlist-item.css-15tld0e:hover p.chakra-text.css-1ta1aea {
+    a.chakra-link.playlist-item.css-k2czz7:hover p.chakra-text.css-1ta1aea {
         color: var(--tempo-colors-background-accent-primary-hovered);
     }
 
-    a.css-15tld0e:hover {
+    a.chakra-link.playlist-item.css-k2czz7:hover, a.playlist-item, a.playlist-item:hover {
         background: none;
     }
 
