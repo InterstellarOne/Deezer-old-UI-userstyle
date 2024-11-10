@@ -2,7 +2,7 @@
     /* ==UserStyle== 
 @namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.6.4
+@version        0.6.5
 @description    Reverts the UI to match the pre-November 2023 styling.
 @author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -117,6 +117,11 @@
         font-weight: 700;
         margin-left: 4px;
     }
+
+    .css-1qay7vc {
+        padding-top: 12px;
+    }
+
     .css-y0o77f:before {
         display: inline-block;
         margin: 0 3px 8px 0;
@@ -157,16 +162,17 @@
         font-style: normal;
     }
 
-    a.css-cgmlmq:hover, a.chakra-link.css-1x3dqo7 {
+    a.css-cgmlmq:hover,
+    a.chakra-link.css-1x3dqo7 {
         background: var(--tempo-colors-button-neutral-secondary-default);
         color: var(--tempo-colors-background-accent-primary-hovered);
-        border-color:transparent;
+        border-color: transparent;
     }
 
     a.css-cgmlmq {
-        border-color:transparent;
+        border-color: transparent;
     }
-    
+
     a.css-1oaqkcs:hover {
         fill: var(--tempo-colors-background-accent-primary-hovered);
     }
@@ -178,7 +184,9 @@
         color: var(--tempo-colors-background-accent-primary-hovered);
     }
 
-    a.chakra-link.playlist-item.css-k2czz7:hover, a.playlist-item, a.playlist-item:hover {
+    a.chakra-link.playlist-item.css-k2czz7:hover,
+    a.playlist-item,
+    a.playlist-item:hover {
         background: none;
     }
 
