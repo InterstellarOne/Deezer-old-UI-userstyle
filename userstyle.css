@@ -2,7 +2,7 @@
     /* ==UserStyle== 
 @namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.6.5
+@version        0.7.0
 @description    Reverts the UI to match the pre-November 2023 styling.
 @author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -73,7 +73,7 @@
 
         --tempo-colors-border-neutral-primary-default: #eaeaea !important;
         --tempo-colors-divider-neutral-primary-default: #eaeaea !important;
-        --tempo-colors-bg-secondary: #fff !important;
+        --tempo-colors-bg-secondary: #f8f8f9 !important;
         --tempo-colors-background-neutral-primary-hovered: #fff !important;
 
         --tempo-colors-button-neutral-primary-default: #f1f1f1 !important;
@@ -83,7 +83,7 @@
         --tempo-colors-bg-contrast: #eaeaea !important;
 
         --tempo-colors-background-neutral-tertiary-default: #eaeaea !important;
-        --tempo-colors-background-neutral-secondary-default: #fff !important;
+        --tempo-colors-background-neutral-secondary-default: #f8f8f9 !important;
 
         --tempo-colors-background-neutral-primary-default: #ffffff !important;
         --background-secondary: #ffffff !important;
