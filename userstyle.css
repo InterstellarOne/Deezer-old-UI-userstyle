@@ -2,7 +2,7 @@
     /* ==UserStyle== 
 @namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.7.0
+@version        0.8.1
 @description    Reverts the UI to match the pre-November 2023 styling.
 @author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -35,6 +35,9 @@
         --huge-buttons-height: 35px;
         --tempo-radii-m: 100px !important;
         --tempo-fonts-display-m: Mabry Pro Medium !important;
+        --tempo-fonts-heading-m: Mabry Pro Medium !important;
+        --tempo-fonts-heading-brand: Mabry Pro Medium !important;
+        --tempo-fonts-heading-l: Mabry Pro Medium !important;
     }
 
     .naboo {
@@ -57,6 +60,7 @@
 
         --tempo-colors-background-neutral-tertiary-default: #32323d !important;
         --tempo-colors-background-neutral-secondary-default: #23232d !important;
+        --tempo-colors-background-neutral-tertiary-disabled: #1b1b22 !important;
         --background-secondary: #23232d !important;
         --tempo-colors-neutral-strong: #32323d !important;
         --tempo-colors-bg-contrast: #32323d !important;
@@ -84,6 +88,7 @@
 
         --tempo-colors-background-neutral-tertiary-default: #eaeaea !important;
         --tempo-colors-background-neutral-secondary-default: #f8f8f9 !important;
+        --tempo-colors-background-neutral-tertiary-disabled: #fafafa !important;
 
         --tempo-colors-background-neutral-primary-default: #ffffff !important;
         --background-secondary: #ffffff !important;
@@ -222,9 +227,16 @@
     }
 
     li.WcgM4.nano-card-item.has-shadow,
-    div.naboo-catalog {
+    div.naboo-catalog,
+    div.nano-card-infos {
         background: var(--tempo-colors-background-neutral-primary-default);
     }
+
+    .css-9ajvv5 {
+        content: 'daily';
+        text-transform: lowercase;
+    }
+
 
     /* -------------------------------------------------- */
     /* Search                                         */
@@ -284,7 +296,15 @@
     }
 
     /* -------------------------------------------------- */
-    /* Artist Page                                         */
+    /* Favorites Page                                     */
+    /* -------------------------------------------------- */
+    .css-p2nhnh {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    /* -------------------------------------------------- */
+    /* Artist Page                                        */
     /* -------------------------------------------------- */
     h2.chakra-heading.css-n1i2np {
         font-family: Droid Sans;
@@ -382,11 +402,10 @@
         display: none;
     }
 
-
-
     /*remove the following section if you want games on the playlist page*/
     .css-1sqxhci,
-    .css-1y3z0z {
+    .css-1y3z0z,
+    .css-b2kirv {
         display: none;
     }
 
@@ -523,6 +542,15 @@
 
     ul.OptWm {
         visibility: hidden;
+    }
+    
+    .chakra-container {
+        background: none;
+        border: none;
+    }
+    
+    .css-1hls3ea {
+        border-color: var(--tempo-colors-border-neutral-primary-default);
     }
 
     /*social dialouges*/
