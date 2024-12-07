@@ -2,7 +2,7 @@
     /* ==UserStyle== 
 @namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.8.3
+@version        0.8.4
 @description    Reverts the UI to match the pre-November 2023 styling.
 @author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -192,7 +192,7 @@
     a.chakra-link.playlist-item.css-k2czz7:hover p.chakra-text.css-1ta1aea {
         color: var(--tempo-colors-background-accent-primary-hovered);
     }
-
+Updated artist item box background color, 
     a.chakra-link.playlist-item.css-k2czz7:hover,
     a.playlist-item,
     a.playlist-item:hover {
@@ -396,7 +396,9 @@
     .css-79io3r:last-of-type {
         padding-bottom: 64px;
     }
-
+    .css-1igp4d3:hover {
+        background: transparent;
+    }
     .css-1igp4d3:active {
         background: transparent;
     }
