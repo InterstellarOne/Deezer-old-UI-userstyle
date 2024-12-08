@@ -2,7 +2,7 @@
     /* ==UserStyle== 
 @namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.8.4
+@version        0.8.5
 @description    Reverts the UI to match the pre-November 2023 styling.
 @author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -33,7 +33,7 @@
         --tempo-colors-background-accent-primary-hovered: #e0364a !important;
         --tempo-colors-background-accent-primary-pressed: #e0364a !important;
         --huge-buttons-height: 35px;
-        --tempo-radii-s: 100px !important;
+        --tempo-radii-s: 30px !important;
         --tempo-radii-m: 100px !important;
         --tempo-radii-md: 100px !important;
         --tempo-fonts-display-m: Mabry Pro Medium !important;
@@ -192,7 +192,7 @@
     a.chakra-link.playlist-item.css-k2czz7:hover p.chakra-text.css-1ta1aea {
         color: var(--tempo-colors-background-accent-primary-hovered);
     }
-Updated artist item box background color, 
+
     a.chakra-link.playlist-item.css-k2czz7:hover,
     a.playlist-item,
     a.playlist-item:hover {
@@ -585,7 +585,7 @@ Updated artist item box background color,
             background-size: cover;
         }
 
-        /*social dialouges*/
+        /*Dialouges*/
         div.css-1ldm6uz {
             font-family: Mabry Pro Medium !important;
             padding-top: 0px;
@@ -621,6 +621,10 @@ Updated artist item box background color,
 
         div.thumbnail- {
             display: none;
+        }
+        
+        .chakra-modal__content.css-v1rvwq{
+            border-radius:10px !important;
         }
     }
 }
