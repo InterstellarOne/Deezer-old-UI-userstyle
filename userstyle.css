@@ -2,7 +2,7 @@
     /* ==UserStyle== 
 @namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.8.5
+@version        0.8.6
 @description    Reverts the UI to match the pre-November 2023 styling.
 @author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
@@ -439,12 +439,14 @@
     }
 
     /* Play / pause button */
-    .css-1u9aiqn:hover {
+    .css-1u9aiqn:hover,
+    .css-13rfimj:hover {
         background-color: var(--tempo-colors-background-neutral-secondary-hovered);
         color: var(--tempo-colors-text-neutral-primary-default)
     }
 
-    .css-1u9aiqn {
+    .css-1u9aiqn,
+    .css-13rfimj {
         background: transparent;
         color: var(--tempo-colors-text-neutral-primary-default);
     }
@@ -621,10 +623,6 @@
 
         div.thumbnail- {
             display: none;
-        }
-        
-        .chakra-modal__content.css-v1rvwq{
-            border-radius:10px !important;
         }
     }
 }
