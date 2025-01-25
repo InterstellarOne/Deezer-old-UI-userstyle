@@ -2,13 +2,14 @@
     /* ==UserStyle== 
 @namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.8.7
+@version        0.8.11
 @description    Reverts the UI to match the pre-November 2023 styling.
 @author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
 @supportURL     https://github.com/InterstellarOne/Deezer-old-UI-userstyle/issues 
 
 ==/UserStyle== */
+    /*
     @font-face {
         font-family: "Mabry Pro Medium";
         src: url("https://files.catbox.moe/xx2qco.eot");
@@ -16,7 +17,16 @@
         url("https://files.catbox.moe/dp6o25.ttf") format("truetype"),
         url("https://files.catbox.moe/sb7d08.woff2") format("woff2");
     }
-
+    */
+    @font-face {
+        font-family: "Mabry Pro Medium";
+        src: url("https://github.com/InterstellarOne/Deezer-old-UI-userstyle/raw/refs/heads/main/Mabry-Pro-Medium.eot");
+        src: url("https://github.com/InterstellarOne/Deezer-old-UI-userstyle/raw/refs/heads/main/Mabry-Pro-Medium.woff") format("woff"),
+        url("https://github.com/InterstellarOne/Deezer-old-UI-userstyle/raw/refs/heads/main/Mabry-Pro-Medium.ttf") format("truetype"),
+        url("https://github.com/InterstellarOne/Deezer-old-UI-userstyle/raw/refs/heads/main/Mabry-Pro-Medium.woff2") format("woff2");
+    }
+    
+    
     /* -------------------------------------------------- */
     /* Variables                                          */
     /* -------------------------------------------------- */
@@ -199,7 +209,8 @@
         background: none;
     }
 
-    .css-1xw9pgz {
+    .css-1xw9pgz,
+    .css-cu7ghb {
         outline-color: transparent;
     }
 
@@ -270,6 +281,9 @@
         border-width: 1px;
     }
 
+    .css-1gmodr5 {
+        background: var(--tempo-colors-background-neutral-secondary-default);
+    }
 
     #topbar-search {
         background: var(--tempo-colors-bg-main);
@@ -298,7 +312,12 @@
 
     nav.navbar {
         box-shadow: none;
-        border-color: var(-tempo-colors-background-neutral-tertiary-default);
+        border-color: var(--tempo-colors-background-neutral-tertiary-default);
+    }
+
+    div.css-1xsugc4:focus,
+    div.css-1xsugc4 {
+        background: none;
     }
 
     /* -------------------------------------------------- */
