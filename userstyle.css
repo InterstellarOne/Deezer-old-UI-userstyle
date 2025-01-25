@@ -2,14 +2,14 @@
     /* ==UserStyle== 
 @namespace    https://userstyles.world/user/InterstellarOne
 @name           Deezer Old UI
-@version        0.8.12
+@version        0.8.13
 @description    Reverts the UI to match the pre-November 2023 styling.
 @author       InterstellarOne
 @homepageURL    https://github.com/InterstellarOne/Deezer-old-UI-userstyle
 @supportURL     https://github.com/InterstellarOne/Deezer-old-UI-userstyle/issues 
 
 ==/UserStyle== */
-    /*
+    
     @font-face {
         font-family: "Mabry Pro Medium";
         src: url("https://files.catbox.moe/xx2qco.eot");
@@ -17,7 +17,7 @@
         url("https://files.catbox.moe/dp6o25.ttf") format("truetype"),
         url("https://files.catbox.moe/sb7d08.woff2") format("woff2");
     }
-    */
+    /*
     @font-face {
         font-family: "Mabry Pro Medium";
         src: url("https://github.com/InterstellarOne/Deezer-old-UI-userstyle/raw/refs/heads/main/Mabry-Pro-Medium.eot");
@@ -25,7 +25,7 @@
         url("https://github.com/InterstellarOne/Deezer-old-UI-userstyle/raw/refs/heads/main/Mabry-Pro-Medium.ttf") format("truetype"),
         url("https://github.com/InterstellarOne/Deezer-old-UI-userstyle/raw/refs/heads/main/Mabry-Pro-Medium.woff2") format("woff2");
     }
-    
+    */
     
     /* -------------------------------------------------- */
     /* Variables                                          */
